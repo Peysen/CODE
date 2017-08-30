@@ -1,0 +1,108 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Java</groupId>
+  <artifactId>spring</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>boot</module>
+  </modules>
+  <name>spring Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <!-- Spring -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <!-- 用于支持事务 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+      <exclusions>
+        <!-- Exclude Commons Logging in favor of SLF4j -->
+        <exclusion>
+          <groupId>commons-logging</groupId>
+          <artifactId>commons-logging</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc-portlet</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>4.2.6.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-redis</artifactId>
+      <version>1.4.1.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <finalName>spring</finalName>
+  </build>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring.version>4.0.7.RELEASE</spring.version>
+    <hibernate.version>4.2.2.Final</hibernate.version>
+    <java.version>1.7</java.version>
+    <aspectj.version>1.6.11</aspectj.version>
+    <c3p0.version>0.9.1.2</c3p0.version>
+    <common-lang3.version>3.3.2</common-lang3.version>
+    <common-beanutils.version>1.9.2</common-beanutils.version>
+    <httpclient.version>4.5</httpclient.version>
+    <mysql.version>5.1.18</mysql.version>
+    <fastjson.version>1.1.31</fastjson.version>
+    <servlet-api.version>2.5</servlet-api.version>
+    <jsp-api.version>2.2</jsp-api.version>
+    <jstl.version>1.2</jstl.version>
+    <slf4j.version>1.7.5</slf4j.version>
+    <zxing.version>3.2.1</zxing.version>
+    <jackson.version>1.9.13</jackson.version>
+    <jackson-databind.version>2.5.0</jackson-databind.version>
+    <uuid.version>3.1.0</uuid.version>
+    <qiniu.version>7.0.0</qiniu.version>
+    <jedis.version>2.5.2</jedis.version>
+    <commons-fileupload.version>1.3.1</commons-fileupload.version>
+    <jsqlparser.version>0.9</jsqlparser.version>
+    <oracle.version>10.2.0.4.0</oracle.version>
+    <cxf.version>2.7.0</cxf.version>
+    <javax-ws.version>2.0-m10</javax-ws.version>
+    <jsr.version>1.1.1</jsr.version>
+  </properties>
+</project>
